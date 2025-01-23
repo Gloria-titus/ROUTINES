@@ -62,28 +62,28 @@ df_python = pd.DataFrame(study_modules_data["Python Basics"], columns=["Topic", 
 df_ccna = pd.DataFrame(study_modules_data["CCNA Basics"], columns=["Topic", "Details", "Timeline"])
 
 
-# Define the directory and file path
-directory = r'C:\Users\Administrator\Desktop\random-commits\csv_files'  # Corrected path without spaces
-schedule_file = r'C:\Users\Administrator\Desktop\random-commits\csv_files\schedules.csv'  # Corrected path
+# Defining the directory and file path
+directory = r'C:\Users\Administrator\Desktop\ROUTINES\csv_files'  
+schedule_file = r'C:\Users\Administrator\Desktop\ROUTINES\csv_files\schedules.csv'  
 
 # Check if the directory exists, create it if it doesn't
 if not os.path.exists(directory):
     os.makedirs(directory)
 
-# Now save the DataFrame
+# Schedule DataFrame
 df_schedule.to_csv(schedule_file, index=False)
 
-# Define the file paths for other exports
-study_file_aws = r'C:\Users\Administrator\Desktop\random-commits\csv_files\aws_study_modules.csv'
-study_file_python = r'C:\Users\Administrator\Desktop\random-commits\csv_files\python_study_modules.csv'
-study_file_ccna = r'C:\Users\Administrator\Desktop\random-commits\csv_files\ccna_study_modules.csv'
-financial_file = r'C:\Users\Administrator\Desktop\random-commits\csv_files\financial_goals.csv'
+# Defining the file paths for other exports
+study_file_aws = r'C:\Users\Administrator\Desktop\ROUTINES\csv_files\aws_study_modules.csv'
+study_file_python = r'C:\Users\Administrator\Desktop\ROUTINES\csv_files\python_study_modules.csv'
+study_file_ccna = r'C:\Users\Administrator\Desktop\ROUTINES\csv_files\ccna_study_modules.csv'
 
-# Export all DataFrames to CSV
+
+# Exporting DataFrames to CSV
 df_schedule.to_csv(schedule_file, index=False)
 df_aws.to_csv(study_file_aws, index=False)
 df_python.to_csv(study_file_python, index=False)
 df_ccna.to_csv(study_file_ccna, index=False)
 
-# Return the paths of the files
-(schedule_file, study_file_aws, study_file_python, study_file_ccna, financial_file)
+exported_files = [schedule_file, study_file_aws, study_file_python, study_file_ccna]
+print("Exported files:", exported_files)

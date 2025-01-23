@@ -1,0 +1,9 @@
+Topic,Details,Timeline
+Intro to Cloud Concepts,"Basics of AWS, core services overview.",Week 1
+EC2 & Compute Services,"Launch instances, scaling, and pricing.",Week 2
+Networking & VPC,"Secure networks, subnets, NAT, gateways.",Week 3
+Storage Solutions,"S3, EBS, EFS, lifecycle policies.",Week 4
+Databases,"RDS, DynamoDB, Aurora; selection criteria.",Week 5
+Identity & Security,"IAM, roles, policies, and access management.",Week 6
+Monitoring & Optimization,"CloudWatch, Trusted Advisor, cost strategies.",Week 7
+Practice Labs & Exam Prep,"Hands-on scenarios, mock exams, review.",Week 8
