@@ -61,16 +61,6 @@ df_aws = pd.DataFrame(study_modules_data["AWS Solutions Architect"], columns=["T
 df_python = pd.DataFrame(study_modules_data["Python Basics"], columns=["Topic", "Details", "Timeline"])
 df_ccna = pd.DataFrame(study_modules_data["CCNA Basics"], columns=["Topic", "Details", "Timeline"])
 
-# Data for financial goals
-financial_goals_data = [
-    ["Buy a Phone", "Save Ksh. 3,000/month", "5 months", "15,000"],
-    ["Move Out", "Save Ksh. 10,000/month", "4 months", "40,000"],
-    ["Pay off Debt", "Allocate Ksh. 5,700/month", "5 months", "28,500"],
-    ["Savings/Investment", "Start saving Ksh. 7,000/month", "After Month 5", "TBD"]
-]
-
-# Creating DataFrame for financial goals
-df_financial_goals = pd.DataFrame(financial_goals_data, columns=["Priority", "Action Plan", "Timeline", "Progress (Ksh)"])
 
 # Define the directory and file path
 directory = r'C:\Users\Administrator\Desktop\random-commits\csv_files'  # Corrected path without spaces
@@ -94,7 +84,6 @@ df_schedule.to_csv(schedule_file, index=False)
 df_aws.to_csv(study_file_aws, index=False)
 df_python.to_csv(study_file_python, index=False)
 df_ccna.to_csv(study_file_ccna, index=False)
-df_financial_goals.to_csv(financial_file, index=False)
 
 # Return the paths of the files
 (schedule_file, study_file_aws, study_file_python, study_file_ccna, financial_file)
